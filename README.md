@@ -15,44 +15,87 @@
   ![](https://github.com/Desktop-Programming-Lab-2559/LAB-05/blob/master/img/pic1.png)
 
   2.2). รันโปรแกรม และบันทึกผลที่ได้
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
+  ```
+  using System;
+namespace LAB5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("This is text 1.");
+            Console.WriteLine("This is text 2.");
+            Console.WriteLine("This is text 3.");
+        }
+    }
+}
+  ```
+![](https://github.com/Ekachai253/LAB-05/blob/c603ff5c5dd441d70a1eacc1786a2bbe9ee034a5/img/run.jpg)
+#จากการรันโปรเเกรมพบว่า เป็นทำให้ขึ้นบรรทัดใหม่ ของข้อความ 1,2,3 
  2.3). แก้โปรแกรมตามรูปด้านล่างนี้
  
   ![](https://github.com/Desktop-Programming-Lab-2559/LAB-05/blob/master/img/pic2.png)
 
  2.4). รันโปรแกรม และบันทึกผลที่ได้
+ ```
+using System;
+namespace LAB5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("{0} and {1}.",3,6);
+        }
+    }
+}
+```
+![](https://github.com/Ekachai253/LAB-05/blob/c603ff5c5dd441d70a1eacc1786a2bbe9ee034a5/img/run1.jpg)
 
-
-
-
+#จากการรันโปรเเกรมพบว่า เป็นการเลือกข้อมูลในตำเเหน่งที่ข้อมูลอยู่ เช่น ดังโค้ดด้านล่าง ผลการรันจะได้ 9 and 88
+```
+using System;
+namespace LAB5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("{4} and {9}.",3,6,7,9,69,11,2,7,88);
+        }
+    }
+}
+```
 
 ###คำถาม 5.1 เครื่องหมาย { }  ในคำสั่ง Console.WriteLine() มีลักษณะการใช้งานอย่างไร
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
+
+#เครื่องหมาย {} มีลักษณะการใช้งานคลายๆกับ %d %f ซึ่งมันจะดึงข้อมูลตัวข้างหลัง , มาเเสดง 
+
 ###คำถาม 5.2  ถ้ามีการใช้ตัวเลขใน { } ที่กระโดด เช่น {0} {2} {3} จะใช้งานได้หรือไม่ อย่างไร จงอธิบาย
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
+
+#ใช้งานได้ เพราะ การที่เราใส่เลขไปในเครื่องหมาย{} จะเป็นการกำหนด ว่าเราจะนำข้อมูล ที่ตำเเหน่งไหนมาเเสดง เช่น Console.WriteLine("{2} and {3}.",3,6,7,9);
+ผลการรันจะได้ 6 and 
  
  2.5). แก้โปรแกรมตามรูปด้านล่างนี้
 
   ![](https://github.com/Desktop-Programming-Lab-2559/LAB-05/blob/master/img/pic3.png)
 
  2.6). รันโปรแกรม และบันทึกผลที่ได้
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
+```
+using System;
+namespace LAB5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("{1},{0} and {1}.", 3, 6);
+        }
+    }
+}
+```
+![](https://github.com/Ekachai253/LAB-05/blob/290d3265491310ada190b948fd5bd93a53a28061/img/run2.jpg)
+#จากการรันโปรเเกรมพบว่า Console.WriteLine("{1},{0} and {1}.", 3, 6); จะเลือกข้อมูลตำเเหน่งที่ 1,0,1 มาเเสดง
 
 3). ทดลองเรื่องการกำหนดความกว้างของอาร์กิวเมนต์
 
@@ -61,18 +104,30 @@
   ![](https://github.com/Desktop-Programming-Lab-2559/LAB-05/blob/master/img/pic4.png)
 
   3.2). รันโปรแกรม และบันทึกผลที่ได้
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
+```
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("         11234567892");
+            Console.WriteLine("12345678901234567890");
+            Console.WriteLine("{0,0}", 1);
+            Console.WriteLine("{0,1}", 1);
+            Console.WriteLine("{0,2}", 1);
+            Console.WriteLine("{0,3}", 1);
+            Console.WriteLine("{0,5}", 1);
+            Console.WriteLine("{0,10}", 1);
+            Console.WriteLine("{0,15}", 1);
+            Console.WriteLine("{0,20}", 1);
+        }
+    }
+}
+```
+![](https://github.com/Ekachai253/LAB-05/blob/22b98bd72d391a9113b2711f6db6ba30877d8720/img/run3.jpg)
+#จากการรันโปรเเกรมพบว่า เป็นการเลือกใช้ข้อมูล บิตที่ 1 ในตำเเหน่ง 0,1,2,3,5,10,15,20
 
 ###คำถาม 5.3 การกำหนดความกว้างของอาร์กิวเมนต์ด้วยเครื่องหมาย { , }  ในคำสั่ง Console.WriteLine() มีรูปแบบการใช้งานอย่างไร
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
+#การกำหนดความกว้างของอาร์กิวเมนต์ด้วยเครื่องหมาย { , } มีรูปแบบการใช้งานเเบบเลือกข้อมูลเเละกำหนดตำเเหน่งสุดท้ายให้กับข้อมูล
 
 
 4). ทดลองเรื่องการกำหนดรูปแบบของอาร์กิวเมนต์
@@ -81,11 +136,22 @@
   ![](https://github.com/Desktop-Programming-Lab-2559/LAB-05/blob/master/img/pic5.png)
 
   4.2). รันโปรแกรม และบันทึกผลที่ได้
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
+  ```
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 123456789;
+            Console.WriteLine("{0:E}", n);
+            Console.WriteLine("{0:F}", n);
+            Console.WriteLine("{0:G}", n);
+            Console.WriteLine("{0:N}", n);
+            Console.WriteLine("{0:P}", n);
+            Console.WriteLine("{0:X}", n);
+        }
+    }
+}
+```
 
 5). ทดลองเรื่องการกำหนดรูปแบบพร้อมความกว้างของอาร์กิวเมนต์
   5.1). แก้โปรแกรมตามรูปด้านล่างนี้
