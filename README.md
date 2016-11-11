@@ -1,3 +1,4 @@
+##นายเอกชัย  ภมรสุขนิรันดิ์  57030253
 #ใบงานที่ 5
 ##เรื่อง การใช้งานคำสั่ง Console.WriteLine()
 ##วัตถุประสงค์
@@ -137,21 +138,26 @@ namespace LAB5
 
   4.2). รันโปรแกรม และบันทึกผลที่ได้
   ```
+  using System;
+namespace Lab5
+{
     class Program
     {
         static void Main(string[] args)
         {
-            int n = 123456789;
-            Console.WriteLine("{0:E}", n);
-            Console.WriteLine("{0:F}", n);
-            Console.WriteLine("{0:G}", n);
-            Console.WriteLine("{0:N}", n);
-            Console.WriteLine("{0:P}", n);
-            Console.WriteLine("{0:X}", n);
+                int n = 123456789;
+                Console.WriteLine("{0:E}", n);
+                Console.WriteLine("{0:F}", n);
+                Console.WriteLine("{0:G}", n);
+                Console.WriteLine("{0:N}", n);
+                Console.WriteLine("{0:P}", n);
+                Console.WriteLine("{0:X}", n);
+            
         }
     }
 }
 ```
+![](https://github.com/Ekachai253/LAB-05/blob/0c14bb130dd14b2cc46e42a6de0a4a9e243faf68/img/run4.jpg)
 
 5). ทดลองเรื่องการกำหนดรูปแบบพร้อมความกว้างของอาร์กิวเมนต์
   5.1). แก้โปรแกรมตามรูปด้านล่างนี้
@@ -159,6 +165,29 @@ namespace LAB5
  ![](https://github.com/Desktop-Programming-Lab-2559/LAB-05/blob/master/img/pic6.png)
 
   5.2). รันโปรแกรม และบันทึกผลที่ได้
+  ```
+  using System;
+namespace Lab5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                int n = 123456789;
+                Console.WriteLine("{0,20:E}", n);
+                Console.WriteLine("{0,20:F}", n);
+                Console.WriteLine("{0,20:G}", n);
+                Console.WriteLine("{0,20:N}", n);
+                Console.WriteLine("{0,20:P}", n);
+                Console.WriteLine("{0,20:X}", n);
+            
+        
+    }
+}
+    }
+
+  ```
+![](https://github.com/Ekachai253/LAB-05/blob/0c14bb130dd14b2cc46e42a6de0a4a9e243faf68/img/run5.jpg)
 
 6). ทดลองเรื่องการกำหนดรูปแบบพร้อมความกว้างของทศนิยมของอาร์กิวเมนต์
   6.1). แก้โปรแกรมตามรูปด้านล่างนี้
@@ -166,6 +195,26 @@ namespace LAB5
  ![](https://github.com/Desktop-Programming-Lab-2559/LAB-05/blob/master/img/pic7.png)
 
   6.2). รันโปรแกรม และบันทึกผลที่ได้
+  ```
+  using System;
+namespace Lab5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                Console.WriteLine("{0:F1}", 123.456789);
+                Console.WriteLine("{0:F2}", 123.456789);
+                Console.WriteLine("{0:F3}", 123.456789);
+                Console.WriteLine("{0:F4}", 123.456789);
+                Console.WriteLine("{0:F5}", 123.456789);
+            
+        }
+    }
+}
+```
+![](https://github.com/Ekachai253/LAB-05/blob/0c14bb130dd14b2cc46e42a6de0a4a9e243faf68/img/run6.jpg)
+#จากการรันโปรเเกรมพบว่า เป็นคำสั่งที่ใช่เลือกหลักทศนิยม
 
 ## แบบฝึกหัด จงระบุ output ของบรรทัดคำสั่งต่อไปนี้
 
@@ -190,3 +239,39 @@ namespace LAB5
           Console.WriteLine("{0}\t{1}\t{2}", i, i*i, i*i*i); 
 15.    Console.WriteLine("{0:#.###}.", 1234.56789);
 ```
+
+##ตอบ
+```
+using System;
+namespace Lab5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = "Hello";
+            Console.WriteLine(String.Format("{0} there. I said {0}! {0}???", name));
+            Console.WriteLine("{2:d} {0:d} {1:d}", 1, 2, 3);
+            Console.WriteLine("Hello " + "World");
+            Console.WriteLine("Here comes a slash \\");
+            Console.WriteLine("|{0, 10}|", 999);
+            Console.WriteLine("|{0,-10}|", 000);
+            Console.WriteLine("The value: {0}.", 500);
+            Console.WriteLine("The value: {0:C}.", 500);
+            Console.WriteLine("{0,-10:F4}", 12.3456789);
+            Console.WriteLine("{0,-10:C}", 12.3456789);
+            Console.WriteLine("{0,-10:E3}", 12.3456789);
+            Console.WriteLine("{0,-10:x}", 65535);
+            Console.WriteLine("{0,-10:X}", 65535);
+            int i;
+            Console.WriteLine("Value\tSquared\tCubed");
+            for (i = 1; i < 10; i++)
+            Console.WriteLine("{0}\t{1}\t{2}", i, i * i, i * i * i);
+            Console.WriteLine("{0:#.###}.", 1234.56789);
+
+        }
+    }
+}
+```
+![](https://github.com/Ekachai253/LAB-05/blob/0c14bb130dd14b2cc46e42a6de0a4a9e243faf68/img/run7.jpg)
+
